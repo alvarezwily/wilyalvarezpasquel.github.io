@@ -3,35 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artículos | Wily M. Álvarez Pasquel</title>
-    <meta name="description" content="Artículos y columnas de Wily M. Álvarez Pasquel publicados en el Diario Ahora de Huánuco y otros medios. Temas de gestión pública, políticas públicas y actualidad nacional.">
-    <meta name="keywords" content="Wily M. Álvarez Pasquel, artículos, Diario Ahora Huánuco, columnas, gestión pública, políticas públicas, Perú">
+    <title>Artículos — Wily M. Álvarez Pasquel | Diario Ahora</title>
+    <meta name="description" content="Archivo de artículos de opinión de Wily M. Álvarez Pasquel publicados en el Diario Ahora de Huánuco. Análisis político, económico y de gestión pública.">
     <meta name="author" content="Wily M. Álvarez Pasquel">
     <meta name="robots" content="index, follow">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Artículos de Wily M. Álvarez Pasquel",
-      "description": "Columnas y artículos sobre gestión pública, políticas públicas y actualidad peruana.",
-      "url": "https://alvarezwily.github.io/wilyalvarezpasquel.github.io/articulos/",
-      "author": {
-        "@type": "Person",
-        "name": "Wily M. Álvarez Pasquel"
-      }
-    }
-    </script>
-
+    <meta property="og:title" content="Artículos — Wily M. Álvarez Pasquel">
+    <meta property="og:description" content="Archivo de columnas publicadas en el Diario Ahora de Huánuco desde 2003.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alvarezwily.github.io/wilyalvarezpasquel.github.io/articulos/">
     <style>
         :root {
             --guinda: #6B1A2A;
             --guinda-claro: #8B2D3E;
+            --guinda-oscura: #4A0F1C;
             --crema: #FAF6F0;
-            --crema-oscuro: #F0E8DA;
+            --crema-oscura: #F0E8DA;
             --marron: #3D2B1F;
             --texto: #5C4A3D;
             --dorado: #B8860B;
+            --dorado-claro: #D4A843;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -47,17 +37,29 @@
             padding: 40px 0 30px;
             text-align: center;
         }
-        header h1 { font-size: 2rem; margin-bottom: 8px; }
-        header p { opacity: 0.9; font-size: 1.05rem; }
-        .back-link {
+        header h1 { font-size: 1.9rem; margin-bottom: 6px; font-weight: 700; }
+        header .subtitle { font-size: 1.05rem; opacity: 0.9; font-weight: 300; }
+        header .back-link {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 18px;
             color: #F0D9A8;
             text-decoration: none;
             font-size: 0.95rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 20px;
+            border-radius: 6px;
+            transition: all 0.3s;
         }
-        .back-link:hover { text-decoration: underline; }
-        section { padding: 40px 0; }
+        header .back-link:hover { background: rgba(255,255,255,0.15); }
+        .stats-bar {
+            background: var(--marron);
+            color: white;
+            padding: 14px 0;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        section { padding: 40px 0; border-bottom: 1px solid var(--crema-oscura); }
+        section:last-child { border-bottom: none; }
         h2 {
             color: var(--guinda);
             font-size: 1.5rem;
@@ -66,183 +68,312 @@
             border-bottom: 3px solid var(--dorado);
             display: inline-block;
         }
-        .intro {
-            background: white;
-            padding: 20px 25px;
-            border-radius: 8px;
-            border-left: 5px solid var(--guinda);
-            margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(107,26,42,0.06);
-        }
-        .article-list { display: grid; gap: 18px; }
         .article-card {
             background: white;
-            padding: 22px 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(107,26,42,0.06);
+            border-radius: 10px;
+            padding: 22px 26px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(107,26,42,0.07);
             border-left: 4px solid var(--guinda);
-            transition: all 0.3s;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .article-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(107,26,42,0.12);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(107,26,42,0.12);
         }
         .article-card h3 {
-            color: var(--guinda);
             font-size: 1.15rem;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: var(--marron);
         }
-        .article-card .meta {
+        .article-card h3 a {
+            color: var(--marron);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .article-card h3 a:hover { color: var(--guinda); }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 10px;
             font-size: 0.88rem;
             color: #8B7355;
-            margin-bottom: 10px;
         }
-        .article-card .meta span {
-            background: var(--crema-oscuro);
-            padding: 2px 10px;
-            border-radius: 12px;
-            margin-right: 8px;
-            font-size: 0.82rem;
+        .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: var(--crema);
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.85rem;
         }
         .article-card p {
-            font-size: 0.97rem;
             color: var(--texto);
+            font-size: 0.96rem;
+            line-height: 1.6;
         }
-        .article-card a {
-            color: var(--guinda);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .article-card a:hover { text-decoration: underline; }
-        .btn-add {
+        .theme-tag {
             display: inline-block;
             background: var(--guinda);
             color: white;
-            padding: 10px 22px;
-            border-radius: 6px;
-            text-decoration: none;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.78rem;
             font-weight: 600;
-            margin-top: 20px;
-            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
         }
-        .btn-add:hover { background: #4A0F1C; }
         footer {
             background: var(--marron);
             color: white;
             text-align: center;
             padding: 25px 0;
             font-size: 0.9rem;
-            margin-top: 30px;
         }
+        footer a { color: #F0D9A8; text-decoration: none; }
         @media (max-width: 600px) {
-            header h1 { font-size: 1.6rem; }
+            header { padding: 30px 0 25px; }
+            header h1 { font-size: 1.5rem; }
+            .article-card { padding: 18px; }
+            .meta { gap: 8px; }
         }
     </style>
-<base target="_blank">
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>📰 Artículos y Columnas</h1>
-        <p>Wily M. Álvarez Pasquel</p>
+        <h1>Artículos de Opinión</h1>
+        <p class="subtitle">Wily M. Álvarez Pasquel — Diario Ahora de Huánuco</p>
         <a href="../" class="back-link">← Volver al inicio</a>
     </div>
 </header>
 
+<div class="stats-bar">
+    <div class="container">
+        📰 23 columnas archivadas &nbsp;|&nbsp; 📅 Desde Setiembre 2015 &nbsp;|&nbsp; 🏷️ 11 temas distintos
+    </div>
+</div>
+
 <section>
     <div class="container">
-        <div class="intro">
-            <p>Desde el año <strong>2003</strong> escribo semanalmente para el <strong>Diario Ahora de Huánuco</strong>, analizando temas de política, economía, gestión pública y actualidad nacional con un enfoque crítico y fundamentado. A continuación, un archivo de las columnas más destacadas.</p>
+        <h2>Archivo Completo</h2>
+        <div class="article-card">
+            <h3><a href="#">¿Este gobierno es inclusivo?</a></h3>
+            <div class="meta">
+                <span>📅 Setiembre 2015</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gestión Pública</span>
+            </div>
+            <p>Cuestiona la retórica inclusiva del gobierno frente a la realidad del acceso al empleo público y la meritocracia en el servicio civil.</p>
         </div>
-
-        <h2>Columnas Recientes</h2>
-        <div class="article-list">
-
-            <!-- EJEMPLO 1 -->
-            <div class="article-card">
-                <h3><a href="#">Formular sin comprender: la paradoja de las políticas públicas en el Perú</a></h3>
-                <div class="meta">
-                    <span>📅 Agosto 2026</span>
-                    <span>📰 Diario Ahora</span>
-                    <span>🏷️ Gestión Pública</span>
-                </div>
-                <p>Reflexión sobre la desconexión entre la formulación de políticas públicas en Lima y la realidad territorial del país, argumentando que la burocracia estatal actúa sin comprender el contexto local.</p>
+        <div class="article-card">
+            <h3><a href="#">Bailamos Negritos con memoria, pero votamos sin ella</a></h3>
+            <div class="meta">
+                <span>📅 Enero 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política</span>
             </div>
-
-            <!-- EJEMPLO 2 -->
-            <div class="article-card">
-                <h3><a href="#">El presupuesto público como instrumento de valor, no de gasto</a></h3>
-                <div class="meta">
-                    <span>📅 Julio 2026</span>
-                    <span>📰 Diario Ahora</span>
-                    <span>🏷️ Presupuesto Público</span>
-                </div>
-                <p>Análisis de cómo el presupuesto por resultados debería orientarse a la generación de valor público real, más allá de la mera ejecución presupuestal.</p>
-            </div>
-
-            <!-- EJEMPLO 3 -->
-            <div class="article-card">
-                <h3><a href="#">Descentralización: ¿avance o espejismo?</a></h3>
-                <div class="meta">
-                    <span>📅 Junio 2026</span>
-                    <span>📰 Diario Ahora</span>
-                    <span>🏷️ Descentralización</span>
-                </div>
-                <p>Evaluación crítica del proceso de descentralización en el Perú desde la perspectiva de quien ha trabajado en la articulación intergubernamental en la PCM y el Congreso.</p>
-            </div>
-
-            <!-- EJEMPLO 4 -->
-            <div class="article-card">
-                <h3><a href="#">La modernización del Estado que no moderniza</a></h3>
-                <div class="meta">
-                    <span>📅 Mayo 2026</span>
-                    <span>📰 Diario Ahora</span>
-                    <span>🏷️ Modernización del Estado</span>
-                </div>
-                <p>Crónica sarcástica sobre los intentos de modernización administrativa que terminan en más trámites, más burocracia y menos servicio al ciudadano.</p>
-            </div>
-
-            <!-- EJEMPLO 5 -->
-            <div class="article-card">
-                <h3><a href="#">Huánuco y el olvido de las políticas nacionales</a></h3>
-                <div class="meta">
-                    <span>📅 Abril 2026</span>
-                    <span>📰 Diario Ahora</span>
-                    <span>🏷️ Territorio</span>
-                </div>
-                <p>Desde la región Huánuco, una mirada sobre cómo las políticas públicas diseñadas en la capital ignoran las particularidades del territorio andino y amazónico.</p>
-            </div>
-
+            <p>Contrasta la vigencia de la tradición cultural huanuqueña con la amnesia electoral que lleva a repetir errores políticos cada cinco años.</p>
         </div>
-
-        <h2 style="margin-top: 45px;">Artículos Académicos y Ensayos</h2>
-        <div class="article-list">
-
-            <div class="article-card">
-                <h3><a href="#">Gestión pública, territorio y valor público: una propuesta desde la periferia</a></h3>
-                <div class="meta">
-                    <span>📅 2026</span>
-                    <span>📚 Ensayo académico</span>
-                    <span>🏷️ Políticas Públicas</span>
-                </div>
-                <p>Capítulo derivado del libro "Formular sin comprender ya no alcanza", donde se propone un modelo de gestión pública centrado en el territorio y el valor público.</p>
+        <div class="article-card">
+            <h3><a href="#">Un Estado que cambia sin aprender</a></h3>
+            <div class="meta">
+                <span>📅 Enero 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gestión Pública</span>
             </div>
-
+            <p>Critica la sucesión de normas sin evaluación, autoridades que rotan sin dejar memoria y políticas públicas anunciadas, pero no implementadas.</p>
         </div>
-
-        <div style="text-align:center; margin-top: 40px;">
-            <p style="color: #8B7355; font-size: 0.95rem; margin-bottom: 15px;">
-                💡 <em>¿Tienes un artículo nuevo? Agrega una nueva tarjeta copiando el formato de arriba.</em>
-            </p>
+        <div class="article-card">
+            <h3><a href="#">Cómo construir gobernabilidad</a></h3>
+            <div class="meta">
+                <span>📅 Febrero 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gobernabilidad</span>
+            </div>
+            <p>Propone un manual para evitar el ciclo de destrucción política cada quinquenio, enfatizando estabilidad y diálogo entre los poderes del Estado.</p>
         </div>
-
+        <div class="article-card">
+            <h3><a href="#">El tiempo del Estado y la vida de los ciudadanos</a></h3>
+            <div class="meta">
+                <span>📅 Febrero 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gestión Pública</span>
+            </div>
+            <p>Denuncia la desconexión entre los plazos burocráticos y las urgencias reales de la población, donde la demora administrativa tiene rostro humano.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Censuran, pero no se censuran</a></h3>
+            <div class="meta">
+                <span>📅 Febrero 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política</span>
+            </div>
+            <p>Analiza la censura presidencial como victoria pírrica de un Congreso que corrige lo que antes eligió, revelando incoherencia institucional.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Democracia en modo supervivencia</a></h3>
+            <div class="meta">
+                <span>📅 Marzo 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Democracia</span>
+            </div>
+            <p>Examina cómo el diseño del caos institucional convirtió el voto en un trámite de agotamiento ante miles de candidatos y partidos fragmentados.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Cuando la matemática incomoda al poder</a></h3>
+            <div class="meta">
+                <span>📅 Abril 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Economía</span>
+            </div>
+            <p>Refuta el menosprecio presidencial hacia los economistas y advierte que la irresponsabilidad fiscal termina pagándola el ciudadano común.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Elegir en la niebla</a></h3>
+            <div class="meta">
+                <span>📅 Abril 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política</span>
+            </div>
+            <p>Describe un país que vota con memoria selectiva entre opciones deficientes, donde la incertidumbre se normalizó como regla democrática.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">La Autonomía como Refugio del Error</a></h3>
+            <div class="meta">
+                <span>📅 Abril 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Justicia</span>
+            </div>
+            <p>Critica al Poder Judicial por usar su autonomía para construir una isla de privilegios burocráticos mientras consume millones sin resolver causas.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">La soberanía de los estómagos vacíos</a></h3>
+            <div class="meta">
+                <span>📅 Mayo 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Economía</span>
+            </div>
+            <p>Cuestiona el rescate de Petroperú frente al abandono de necesidades básicas en Huánuco, exponiendo el costo de oportunidad de prioridades ideológicas.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">La estética de la impunidad y el milagro del patrimonio público</a></h3>
+            <div class="meta">
+                <span>📅 Mayo 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Corrupción</span>
+            </div>
+            <p>Denuncia la resignación estética ante el enriquecimiento ilícito de funcionarios y la urgencia de un control tecnológico sobre el patrimonio público.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El cadalso de la complicidad y el retorno del control total</a></h3>
+            <div class="meta">
+                <span>📅 Mayo 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gobernabilidad</span>
+            </div>
+            <p>Alerta sobre el retroceso democrático por captura institucional y la entrega de organismos clave a cambio de favores políticos partidarios.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Formular sin comprender ya no alcanza: Wily Alvarez cuestiona la gestión pública territorial</a></h3>
+            <div class="meta">
+                <span>📅 Junio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gestión Pública</span>
+            </div>
+            <p>Entrevista donde cuestiona la gestión pública que gasta mucho, pero transforma poco por no comprender los territorios que gobierna.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El reparto de la miseria electoral y el muro bicameral</a></h3>
+            <div class="meta">
+                <span>📅 Junio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política</span>
+            </div>
+            <p>Analiza las amenazas a la gobernabilidad tras una elección fragmentada donde la representatividad no garantiza capacidad de gobierno.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El espejismo de la intervención pública</a></h3>
+            <div class="meta">
+                <span>📅 Junio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Descentralización</span>
+            </div>
+            <p>Expone el desencuentro territorial en Huánuco mediante tres estampas de proyectos públicos fallidos por desarticulación institucional.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El reto de la gobernabilidad</a></h3>
+            <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Gobernabilidad</span>
+            </div>
+            <p>Reflexiona sobre la responsabilidad democrática ante un país partido en dos tras las elecciones, donde la mitad de la población se siente excluida.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El mito del indispensable</a></h3>
+            <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Economía</span>
+            </div>
+            <p>Desmonta la personalización del BCRP y defiende que la estabilidad económica es obra de instituciones, no de un solo funcionario mesiánico.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">La resaca fiscal: Cálculo político tras la farra</a></h3>
+            <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Economía</span>
+            </div>
+            <p>Critica la rectificación tardía del Tribunal Constitucional sobre el gasto público, dejando al país con la cuenta de una farra legislativa.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El examen del candidato: Datos mínimos para gobernar Huánuco</a></h3>
+            <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política</span>
+            </div>
+            <p>Exige rigor técnico a los candidatos regionales y municipales, denunciando promesas inviables y amnesia sobre indicadores sociales de Huánuco.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Mensaje a la Nación: Entre el voluntarismo y las restricciones del Estado (Parte I)</a></h3>
+            <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Seguridad / Clima</span>
+            </div>
+            <p>Cuestiona el efectismo militar y la falta de reformas estructurales en seguridad ciudadana y prevención climática del mensaje presidencial.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">Mensaje a la Nación: Entre el voluntarismo y las restricciones del Estado (Parte II)</a></h3>
+            <div class="meta">
+                <span>📅 Agosto 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política Social</span>
+            </div>
+            <p>Analiza la ilusión de metas sociales sin presupuesto y el catálogo de megaobras inviables presentado en el discurso de gobierno.</p>
+        </div>
+        <div class="article-card">
+            <h3><a href="#">El feudo y el patronato: La deformación patrimonial de la democracia en Huánuco</a></h3>
+            <div class="meta">
+                <span>📅 Agosto 2026</span>
+                <span>📰 Diario Ahora</span>
+                <span class="theme-tag">Política Regional</span>
+            </div>
+            <p>Denuncia la conversión del Gobierno Regional de Huánuco en propiedad familiar y el uso de recursos públicos para redes clientelares.</p>
+        </div>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <p>© 2026 Wily M. Álvarez Pasquel | Columnista del Diario Ahora de Huánuco</p>
+        <p>© 2026 Wily M. Álvarez Pasquel | <a href="../">Volver al perfil profesional</a></p>
+        <p style="margin-top:5px; font-size:0.85rem; opacity:0.8;">Columnista del Diario Ahora de Huánuco desde 2003</p>
     </div>
 </footer>
 
