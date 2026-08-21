@@ -109,21 +109,21 @@
             border-radius: 5px;
             font-size: 0.85rem;
         }
-        .article-card p {
-            color: var(--texto);
-            font-size: 0.96rem;
-            line-height: 1.6;
-        }
-        .theme-tag {
-            display: inline-block;
-            background: var(--guinda);
-            color: white;
-            padding: 2px 10px;
+        /* CORRECCIÓN: tag de tema con fondo guinda y letra blanca */
+        .meta .theme-tag {
+            background: var(--guinda) !important;
+            color: white !important;
+            padding: 3px 10px;
             border-radius: 4px;
             font-size: 0.78rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.3px;
+        }
+        .article-card p {
+            color: var(--texto);
+            font-size: 0.96rem;
+            line-height: 1.6;
         }
         footer {
             background: var(--marron);
