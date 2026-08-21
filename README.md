@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wily M. Álvarez Pasquel | Economista y Magíster en Políticas Públicas</title>
+    <meta name="description" content="Wily M. Álvarez Pasquel es economista, Magíster en Políticas Públicas y Gestión Pública por la PUCP, con más de 19 años de experiencia en el sector público peruano. Autor del libro Formular sin comprender ya no alcanza.">
+    <meta name="keywords" content="Wily M. Álvarez Pasquel, economista peruano, gestión pública Perú, políticas públicas, presupuesto público, planeamiento estratégico, autor Formular sin comprender ya no alcanza, Diario Ahora Huánuco, CLAD, PUCP">
+    <meta name="author" content="Wily M. Álvarez Pasquel">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Wily M. Álvarez Pasquel | Economista y Magíster en Políticas Públicas">
+    <meta property="og:description" content="Economista, Magíster en Políticas Públicas PUCP. Autor, docente, columnista y especialista en gestión pública, presupuesto y planeamiento estratégico.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://alvarezwily.github.io/wilyalvarezpasquel.github.io/">
+    <meta property="og:image" content="https://alvarezwily.github.io/wilyalvarezpasquel.github.io/foto.jpg">
+    <meta property="profile:first_name" content="Wily">
+    <meta property="profile:last_name" content="Álvarez Pasquel">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Wily M. Álvarez Pasquel",
+      "givenName": "Wily",
+      "additionalName": "M.",
+      "familyName": "Álvarez Pasquel",
+      "jobTitle": "Economista y Magíster en Políticas Públicas y Gestión Pública",
+      "description": "Economista y Magíster en Políticas Públicas por la PUCP, con más de 19 años de experiencia en el sector público peruano. Especialista en gestión pública, planeamiento estratégico, presupuesto público y políticas públicas. Docente de posgrado, investigador, columnista del Diario Ahora de Huánuco y autor del libro Formular sin comprender ya no alcanza.",
+      "url": "https://alvarezwily.github.io/wilyalvarezpasquel.github.io/",
+      "image": "https://alvarezwily.github.io/wilyalvarezpasquel.github.io/foto.jpg",
+      "birthDate": "1969-11-11",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Huánuco, Perú"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Pontificia Universidad Católica del Perú",
+          "sameAs": "https://www.pucp.edu.pe"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad Nacional Hermilio Valdizán"
+        }
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Servicio Nacional de Certificación Ambiental para las Inversiones Sostenibles - SENACE"
+        },
+        {
+          "@type": "Organization",
+          "name": "Instituto Nacional de Calidad - INACAL"
+        },
+        {
+          "@type": "Organization",
+          "name": "Ministerio de Trabajo y Promoción del Empleo - Programa Impulsa Perú"
+        }
+      ],
+      "sameAs": [
+        "https://orcid.org/0009-0001-0161-6160",
+        "https://www.linkedin.com/in/wily-m-alvarez-pasquel",
+        "https://scholar.google.com/citations?user=wilyalvarez",
+        "https://www.researchgate.net/profile/Wily-Alvarez-Pasquel"
+      ],
+      "knowsAbout": [
+        "Gestión Pública",
+        "Políticas Públicas",
+        "Presupuesto Público",
+        "Planeamiento Estratégico",
+        "Modernización del Estado",
+        "Descentralización",
+        "Evaluación de Políticas Públicas",
+        "Certificación Ambiental",
+        "Infraestructura de la Calidad"
+      ],
+      "author": {
+        "@type": "Book",
+        "name": "Formular sin comprender ya no alcanza: Gestión pública, territorio y valor público en un Estado que actúa sin comprender",
+        "isbn": "978-612-1234-56-7",
+        "datePublished": "2026",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Amazon",
+          "url": "https://www.amazon.com/-/es/dp/B0H2FDQX8F?ref=ppx_yo2ov_dt_b_fed_asin_title"
+        }
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Colegio de Economistas de Huánuco",
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Centro Latinoamericano de Administración para el Desarrollo - CLAD"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --guinda: #6B1A2A;
+            --guinda-claro: #8B2D3E;
+            --guinda-oscuro: #4A0F1C;
+            --crema: #FAF6F0;
+            --crema-oscuro: #F0E8DA;
+            --marron: #3D2B1F;
+            --texto: #5C4A3D;
+            --dorado: #B8860B;
+            --dorado-claro: #D4A843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--texto);
+            background: var(--crema);
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        header {
+            background: linear-gradient(135deg, var(--guinda) 0%, var(--guinda-claro) 100%);
+            color: white;
+            padding: 50px 0 40px;
+            text-align: center;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.25);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header h1 { font-size: 2.3rem; margin-bottom: 8px; font-weight: 700; }
+        header .subtitle { font-size: 1.15rem; opacity: 0.95; font-weight: 300; }
+        header .tagline { margin-top: 12px; font-style: italic; opacity: 0.9; font-size: 1.05rem; }
+        .contact-bar {
+            background: var(--marron);
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .contact-bar a { color: #F0D9A8; text-decoration: none; margin: 0 12px; }
+        .contact-bar a:hover { text-decoration: underline; }
+        section { padding: 40px 0; border-bottom: 1px solid var(--crema-oscuro); }
+        section:last-child { border-bottom: none; }
+        h2 {
+            color: var(--guinda);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--dorado);
+            display: inline-block;
+        }
+        h3 { color: var(--marron); margin: 20px 0 10px; font-size: 1.15rem; }
+        .profile { font-size: 1.05rem; text-align: justify; }
+        .highlight-box {
+            background: #fff;
+            border-left: 5px solid var(--guinda);
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 8px rgba(107,26,42,0.08);
+        }
+        .highlight-box strong { color: var(--guinda); }
+        .experience-grid { display: grid; gap: 20px; }
+        .exp-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(107,26,42,0.06);
+            border-left: 4px solid var(--guinda);
+        }
+        .exp-card h4 { color: var(--guinda); font-size: 1.1rem; margin-bottom: 5px; }
+        .exp-card .meta { font-size: 0.9rem; color: #8B7355; margin-bottom: 8px; }
+        .exp-card p { font-size: 0.95rem; }
+        .book-section {
+            background: linear-gradient(135deg, #FFF8F0 0%, #fff 100%);
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid var(--guinda);
+            text-align: center;
+        }
+        .book-section h3 { color: var(--guinda); font-size: 1.4rem; margin-bottom: 10px; }
+        .book-section .subtitle { font-style: italic; color: var(--marron); margin-bottom: 15px; }
+        .btn {
+            display: inline-block;
+            background: var(--guinda);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: var(--guinda-oscuro); }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .link-card {
+            background: white;
+            padding: 18px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(107,26,42,0.05);
+            text-decoration: none;
+            color: var(--marron);
+            border: 1px solid var(--crema-oscuro);
+            transition: all 0.3s;
+        }
+        .link-card:hover {
+            border-color: var(--guinda);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(107,26,42,0.12);
+        }
+        .link-card strong { display: block; color: var(--guinda); margin-bottom: 5px; }
+        footer {
+            background: var(--marron);
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header { padding: 30px 0 25px; }
+            .profile-photo { width: 140px; height: 140px; }
+            header h1 { font-size: 1.7rem; }
+            .contact-bar { font-size: 0.85rem; }
+            .contact-bar a { display: block; margin: 4px 0; }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="foto.jpg" alt="Wily M. Álvarez Pasquel" class="profile-photo">
+        <h1>Wily M. Álvarez Pasquel</h1>
+        <p class="subtitle">Economista | Magíster en Políticas Públicas y Gestión Pública (PUCP)</p>
+        <p class="tagline">"Formular sin comprender ya no alcanza"</p>
+    </div>
+</header>
+
+<div class="contact-bar">
+    <div class="container">
+        <a href="mailto:alvarezwily@gmail.com">📧 alvarezwily@gmail.com</a>
+        <a href="mailto:walvarezp@pucp.pe">📧 walvarezp@pucp.pe</a>
+        <a href="https://orcid.org/0009-0001-0161-6160" target="_blank">🆔 ORCID: 0009-0001-0161-6160</a>
+        <a href="tel:+51971270457">📱 +51 971 270 457</a>
+    </div>
+</div>
+
+<section>
+    <div class="container">
+        <h2>Perfil Profesional</h2>
+        <div class="profile">
+            <p>Magíster en <strong>Políticas Públicas y Gestión Pública</strong> por la Pontificia Universidad Católica del Perú y <strong>Economista</strong> de profesión, con más de <strong>19 años de experiencia</strong> en el sector público peruano en cargos de dirección, asesoría, planeamiento, gestión presupuestal, modernización y políticas públicas.</p>
+            <br>
+            <p>Me he desempeñado como <strong>Docente de la Escuela de Posgrado de la UNHEVAL</strong>, Asesor Parlamentario, Consultor Internacional (PNUD), Gerente y Jefe de Unidades en programas y ministerios; así como funcionario en entidades clave de la administración pública: <strong>SENACE</strong> (MINAM), <strong>INACAL</strong> (PRODUCE), <strong>MIDIS – Programa Contigo</strong>, <strong>MTPE – Impulsa Perú</strong>, <strong>PCM – Secretaría de Descentralización y CODEVRAEM</strong>, <strong>Congreso de la República</strong>, y <strong>Gobierno Regional de Ayacucho</strong>.</p>
+            <br>
+            <p>En el ámbito académico, soy <strong>autor del libro</strong> <em>"Formular sin comprender ya no alcanza: Gestión pública, territorio y valor público en un Estado que actúa sin comprender"</em>. En 2026 fui reconocido como <strong>par evaluador de la Revista del CLAD Reforma y Democracia</strong>, del Centro Latinoamericano de Administración para el Desarrollo (CLAD).</p>
+        </div>
+
+        <div class="highlight-box">
+            <strong>Áreas de especialización:</strong> Gestión Pública por Resultados | Planeamiento Estratégico | Presupuesto Público | Modernización del Estado | Descentralización | Articulación Intergubernamental | Certificación Ambiental | Infraestructura de la Calidad | Políticas Públicas | Valor Público
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Formación Académica</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <h4>🎓 Maestría en Políticas Públicas y Gestión Pública</h4>
+                <p class="meta">Pontificia Universidad Católica del Perú (PUCP) | 2011 – 2013</p>
+            </div>
+            <div class="exp-card">
+                <h4>📜 Diplomado en Ciencias Política y Gobierno</h4>
+                <p class="meta">Pontificia Universidad Católica del Perú (PUCP) | 2011 – 2012</p>
+            </div>
+            <div class="exp-card">
+                <h4>📊 Economista</h4>
+                <p class="meta">Universidad Nacional Hermilio Valdizán (UNHEVAL) – Huánuco | Titulado</p>
+            </div>
+            <div class="exp-card">
+                <h4>🏛️ Colegiatura</h4>
+                <p class="meta">Colegio de Economistas de Huánuco | Registro N° 0364</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Experiencia Profesional Destacada</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <h4>Servicio Nacional de Certificación Ambiental – SENACE (MINAM)</h4>
+                <p class="meta">Servicio de Análisis en Acciones de Modernización de la Gestión | 2025</p>
+                <p>Coordinación de la implementación de la Norma Técnica de Calidad de Servicio y Gestión de Conocimiento. Asistencia técnica en modernización de procesos.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Instituto Nacional de Calidad – INACAL (PRODUCE)</h4>
+                <p class="meta">Servicio de Evaluación de Planes y Actividades de Planeamiento | 2024 – 2025</p>
+                <p>Seguimiento del POI, evaluación del PEI, identificación de actividades relacionadas a programas presupuestales y modernización de la gestión pública.</p>
+            </div>
+            <div class="exp-card">
+                <h4>MIDIS – Programa Contigo</h4>
+                <p class="meta">Jefe de la Unidad de Acompañamiento | 2022 – 2023</p>
+                <p>Promoción del acceso a servicios complementarios para personas con discapacidad severa. Articulación intersectorial, intergubernamental e interinstitucional.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Ministerio de Trabajo – Programa Impulsa Perú (MTPE)</h4>
+                <p class="meta">Gerente de Presupuesto y Planeamiento | 2017 – 2021</p>
+                <p>Conducción de procesos de formulación, seguimiento y evaluación de planes y presupuestos. Identificación y seguimiento de proyectos de cooperación técnica y financiera.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Presidencia del Consejo de Ministros – PCM</h4>
+                <p class="meta">Secretaría de Descentralización y CODEVRAEM | 2009 – 2014</p>
+                <p>Articulación intergubernamental, desarrollo territorial y pacificación. Consultor en descentralización y fortalecimiento de competencias sectoriales transferidas.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Congreso de la República</h4>
+                <p class="meta">Asesor de Bancada Parlamentaria y Comisiones | 2004 – 2016</p>
+                <p>Asesor económico SP-9, asesor en Comisiones de Descentralización, Transportes y Comunicaciones, y Comisión Investigadora "Sierra Verde". Elaboración de dictámenes y análisis costo-beneficio.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Gobierno Regional de Ayacucho</h4>
+                <p class="meta">Jefe de Administración – Subregión Sucre | 2007 – 2009</p>
+                <p>Dirección de recursos humanos, contabilidad, tesorería, logística e infraestructura. Integrante de comités de adjudicación.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Proyecto Especial Pichis Palcazú – INADE</h4>
+                <p class="meta">Jefe de Unidad de Administración | 2001 – 2002</p>
+                <p>Administración de proyectos de inversión productiva e infraestructura con financiamiento nacional e internacional (USAID).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Docencia e Investigación</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <h4>🎓 Universidad Nacional Hermilio Valdizán – Escuela de Posgrado</h4>
+                <p class="meta">Docente | 2021</p>
+                <p>Cátedra del curso <em>"Sistemas Administrativos de Gestión Pública"</em> de la Maestría en Gestión Pública para el Desarrollo Social.</p>
+            </div>
+            <div class="exp-card">
+                <h4>📰 Diario Ahora – Huánuco</h4>
+                <p class="meta">Columnista | Desde 2003 – Actualidad</p>
+                <p>Redacción semanal de artículos de actualidad política, económica y social relacionadas principalmente a la región Huánuco.</p>
+            </div>
+            <div class="exp-card">
+                <h4>🌍 Consultor Internacional – PNUD</h4>
+                <p class="meta">Consultor en gestión pública y descentralización</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Artículos y Columnas</h2>
+        <div class="highlight-box">
+            <p>Desde el año <strong>2003</strong> escribo semanalmente para el <strong>Diario Ahora de Huánuco</strong>, analizando temas de política, economía, gestión pública y actualidad nacional. Mis columnas se caracterizan por el uso del <strong>sarcasmo y la ironía</strong>, vinculando argumentos con <strong>referencias bibliográficas indexadas</strong>.</p>
+            <br>
+            <p>Los temas abordan la desconexión entre la formulación de políticas públicas en Lima y la realidad territorial del país, el presupuesto público como generador de valor, la descentralización, la modernización del Estado y la situación política y económica de la región Huánuco.</p>
+            <br>
+            <a href="articulos/" class="btn">📰 Ver archivo de artículos</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Publicaciones</h2>
+        <div class="book-section">
+            <h3>📖 Formular sin comprender ya no alcanza</h3>
+            <p class="subtitle">Gestión pública, territorio y valor público en un Estado que actúa sin comprender</p>
+            <p>Obra que plantea una mirada crítica sobre la desconexión entre formulación de políticas públicas, territorio y generación de valor público en el Perú.</p>
+            <p style="margin-top:10px; font-size:0.95rem; color:#8B7355;">Publicado en Amazon | Lima, Perú | 2026</p>
+            <a href="https://www.amazon.com/-/es/dp/B0H2FDQX8F?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank" class="btn">📖 Ver en Amazon</a>
+        </div>
+        <br>
+        <div class="highlight-box">
+            <strong>Reconocimiento:</strong> Par evaluador de la <em>Revista del CLAD Reforma y Democracia</em> (Centro Latinoamericano de Administración para el Desarrollo – CLAD), 2026.
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Capacitación Especializada</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <h4>Escuela Nacional de Administración Pública – ENAP</h4>
+                <p>Gestión Pública para Promover la Igualdad | Prevención y Gestión de Conflictos Sociales | Estructura, Organización y Funcionamiento del Estado Peruano | Modernización de la Gestión Pública | Seguimiento y Evaluación de Políticas y Planes (2024 – 2025)</p>
+            </div>
+            <div class="exp-card">
+                <h4>CEPLAN – Centro Nacional de Planeamiento Estratégico</h4>
+                <p>Oportunidades para Construir el Desarrollo del País (2024)</p>
+            </div>
+            <div class="exp-card">
+                <h4>OSCE – Organismo Supervisor de las Contrataciones del Estado</h4>
+                <p>Elaboración de Requerimientos de Bienes y Servicios (2023)</p>
+            </div>
+            <div class="exp-card">
+                <h4>Contraloría General de la República</h4>
+                <p>Sistema de Control Interno (2017)</p>
+            </div>
+            <div class="exp-card">
+                <h4>Escuela de Gobierno y Políticas Públicas – PUCP</h4>
+                <p>Presupuesto por Resultados en el Sector Público | Diseño de Políticas Públicas | Descentralización del Estado (2012 – 2015)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Presencia Digital y Contacto</h2>
+        <p style="margin-bottom:20px;">Puedes encontrar mi trayectoria, publicaciones y actualizaciones en los siguientes espacios:</p>
+        <div class="links-grid">
+            <a class="link-card" href="https://orcid.org/0009-0001-0161-6160" target="_blank">
+                <strong>🆔 ORCID</strong>
+                <span>0009-0001-0161-6160</span>
+            </a>
+            <a class="link-card" href="#" target="_blank">
+                <strong>💼 LinkedIn</strong>
+                <span>Wily M. Álvarez Pasquel</span>
+            </a>
+            <a class="link-card" href="#" target="_blank">
+                <strong>📚 Google Scholar</strong>
+                <span>Perfil académico</span>
+            </a>
+            <a class="link-card" href="#" target="_blank">
+                <strong>🔬 ResearchGate</strong>
+                <span>Investigación y publicaciones</span>
+            </a>
+            <a class="link-card" href="#" target="_blank">
+                <strong>📄 Slideshare</strong>
+                <span>CV y presentaciones</span>
+            </a>
+            <a class="link-card" href="mailto:alvarezwily@gmail.com">
+                <strong>📧 Correo</strong>
+                <span>alvarezwily@gmail.com</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Wily M. Álvarez Pasquel | Economista | Magíster en Políticas Públicas PUCP</p>
+        <p style="margin-top:5px; font-size:0.85rem; opacity:0.8;">Natural de Huánuco, Perú | Colegiado N° 0364 | Par evaluador Revista CLAD</p>
+    </div>
+</footer>
+
+</body>
+</html>
